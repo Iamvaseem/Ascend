@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "name": "stgspk1",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiversion": "2023-05-01",
+            "location": "[resourceGroup().location]",
+            "kind": "storageV2",
+            "sku": {
+                "name":"premium_LRS",
+                "tier":"premium"
+            }
+        },
+        {
+            "name": "stgspk2",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiversion": "2023-05-01",
+            "location": "[resourceGroup().location]",
+            "kind": "storageV2",
+            "sku": {
+                "name":"premium_LRS",
+                "tier":"premium"
+            }
+        },
+        {
+            "name": "stgspk3",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiversion": "2023-05-01",
+            "location": "[resourceGroup().location]",
+            "kind": "storageV2",
+            "sku": {
+                "name":"Standard_LRS",
+                "tier":"Standard"
+            }
+        }
+            ],
+            "outputs": {}
+        }
+        
+        
+
+        
+    
+
